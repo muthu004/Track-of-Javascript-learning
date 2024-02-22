@@ -42,5 +42,6 @@ const newnum=numbers.map((num)=>num+20).map((num)=>num*10).filter((num)=>num>150
 //reduce
 
 const reduceFunction=[1,2,3,4,5]
+//Calculates the total value by reducing an array of numbers.
 const mytotal=reduceFunction.reduce((acc,curr)=> acc+curr,0)
 console.log(mytotal);
