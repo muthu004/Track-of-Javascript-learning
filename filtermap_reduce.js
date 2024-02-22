@@ -1,4 +1,4 @@
- const num1=[2,3,4,5,6,7]
+const num1 = [2, 3, 4, 5, 6, 7];
 // // const newNum=num1.filter( (num) =>num>4 ) // here return is not required
 // // console.log(newNum);
 
@@ -30,18 +30,25 @@
 
 //Map
 
-const numbers=[1,2,3,4,5]
-const numm=numbers.map((num)=>num+1)
-//console.log(numm);
+// const numbers=[1,2,3,4,5]
+// const numm=numbers.map((num)=>num+1)
+// //console.log(numm);
 
-//chaining
+// //chaining
 
-const newnum=numbers.map((num)=>num+20).map((num)=>num*10).filter((num)=>num>150).filter((num)=>num>180) // at last if you put map for conditions you will get true or false put filter to get values
-//console.log(newnum);
+// const newnum=numbers.map((num)=>num+20).map((num)=>num*10).filter((num)=>num>150).filter((num)=>num>180) // at last if you put map for conditions you will get true or false put filter to get values
+// //console.log(newnum);
 
-//reduce
+// //reduce
 
-const reduceFunction=[1,2,3,4,5]
-//Calculates the total value by reducing an array of numbers.
-const mytotal=reduceFunction.reduce((acc,curr)=> acc+curr,0)
-console.log(mytotal);
+const reduceFunction = [1, 2, 3, 4, 5];
+// //Calculates the total value by reducing an array of numbers.
+// const mytotal=reduceFunction.reduce((acc,curr)=> acc+curr,0)
+// console.log(mytotal);
+
+// map->alters the original array if you use condition you will get only boolean values in array
+const total = reduceFunction.map((num) => num + 2);
+console.log(total);
+// filter -> checks condition if you try to alter you will only get the original array back without any change
+const total1 = reduceFunction.filter((num) => num > 2);
+console.log(total1);
