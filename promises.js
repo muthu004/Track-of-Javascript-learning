@@ -27,7 +27,7 @@ const fourPromise=new Promise(function(resolve,reject){
             resolve( {username :"Kumar" ,age:22})
         }
         else{
-            reject("Sometging is wrong")
+            reject("Something is wrong")
         }
 
     },1000)
