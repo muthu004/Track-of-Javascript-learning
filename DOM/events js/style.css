@@ -1,0 +1,13 @@
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 20%;
+}
